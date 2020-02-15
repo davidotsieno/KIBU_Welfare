@@ -110,7 +110,6 @@ public class AccountActivity extends AppCompatActivity {
 
                                 Toast.makeText(AccountActivity.this,getClass().getSimpleName()+lnmResult.CustomerMessage,
                                 Toast.LENGTH_LONG).show();
-                                //Log.i(AccountActivity.this.getClass().getSimpleName(), lnmResult.ResponseDescription);
                             }
 
                             @Override

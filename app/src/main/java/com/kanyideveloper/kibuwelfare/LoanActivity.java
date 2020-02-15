@@ -28,9 +28,7 @@ public class LoanActivity extends AppCompatActivity {
         amount = findViewById(R.id.loanAmount);
         submit = findViewById(R.id.submitBtn);
         final EditText dayToRepay = findViewById(R.id.byWhen);
-        
-        
-        //
+
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         final Date todayDate = new Date();
         thisDate = sdf.format(todayDate);
@@ -49,10 +47,6 @@ public class LoanActivity extends AppCompatActivity {
 
         Date resultdate = new Date(c.getTimeInMillis());
         dateInString = sdf.format(resultdate);
-        
-        //
-
-
 
         amount.addTextChangedListener(new TextWatcher() {
             @Override

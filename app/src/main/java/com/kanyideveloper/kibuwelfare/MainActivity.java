@@ -54,8 +54,6 @@ public class MainActivity extends AppCompatActivity {
         btnLog = findViewById(R.id.btnLog);
         register = findViewById(R.id.registerBtn);
 
-
-
         btnLog.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -72,8 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 else if(emailAddre.isEmpty() && password.isEmpty()){
                     Toast.makeText(MainActivity.this,"Valid email address and password are required",Toast.LENGTH_SHORT).show();
                 }
-
-
                 else if(!(emailAddre.isEmpty() && password.isEmpty())){
                     load.show();
                     mAuth.signInWithEmailAndPassword(emailAddre,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {

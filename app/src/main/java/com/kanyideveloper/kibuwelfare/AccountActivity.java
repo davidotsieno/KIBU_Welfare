@@ -29,7 +29,7 @@ public class AccountActivity extends AppCompatActivity {
     Button sendButton;
     EditText editTextAmount;
 
-    //Declare Daraja :: Global Variable
+    //Daraja :: Global Variable
     Daraja daraja;
 
     String phoneNumber;
@@ -49,7 +49,7 @@ public class AccountActivity extends AppCompatActivity {
 
         //Init Daraja
         //To get the access token
-        //TODO :: REPLACE WITH YOUR OWN CREDENTIALS  :: THIS IS FOR SANDBOX DEMO
+        //TODO :: THIS IS FOR SANDBOX DEMO
         daraja = Daraja.with("l8ARsDI74nOYbfNbaH2e8AuuDtVlIN8z", "Gfp72UtCRN0uAZF1",
                 new DarajaListener<AccessToken>() {
                     @Override
@@ -65,9 +65,6 @@ public class AccountActivity extends AppCompatActivity {
                         Log.e(AccountActivity.this.getClass().getSimpleName(), error);
                     }
                 });
-
-        //TODO :: THIS IS A SIMPLE WAY TO DO ALL THINGS AT ONCE!!! DON'T DO THIS :)
-
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

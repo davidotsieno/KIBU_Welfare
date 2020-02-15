@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".RepaymentActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Repayment"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Review your repayment details before clicking repay"
+            android:textColor="#000"
+            android:textSize="10dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:rowCount="2"
+            android:columnCount="2">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="30dp"
+                android:text="From:"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="30dp"
+                android:text="Due Date:"
+                android:textColor="#000"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="31/01/2020"
+                android:textColor="#000"
+                android:layout_marginTop="-10dp"
+                android:layout_margin="25dp"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="21/02/2020"
+                android:layout_marginTop="-10dp"
+                android:layout_margin="25dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Total Amount Due in KES:"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="1,000"
+            android:padding="20dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/due"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:paddingBottom="5dp"
+            android:text="Please note that, the more you overstay with the money the higher the overdue charges increases"
+            android:textColor="#3C3F41"
+            android:textSize="12dp"/>
+
+        <CheckBox
+            android:id="@+id/termsCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="I agree to the terms and conditions."/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"                android:layout_height="wrap_content"
+                android:text="Repay"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/submitbtn1"/>
+        </GridLayout>
+    </LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    tools:context=".HomeActivity"
+    android:layout_width="339dp"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/acc"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/cards"
+            app:cardBackgroundColor="#33813C"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_account_balance_wallet_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:gravity="center"
+                android:text="My Account"
+                android:textColor="#fff" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ln"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/cards"
+            app:cardBackgroundColor="#33813C"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_attach_money_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:gravity="center"
+                android:text="Loan Request"
+                android:textColor="#fff" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rep"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#33813C"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_keyboard_return_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:gravity="center"
+                android:text="Repay Loan"
+                android:textColor="#fff" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/prof"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#33813C"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:gravity="center"
+                android:text="Profile"
+                android:textColor="#fff" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/faq"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/cards"
+            app:cardBackgroundColor="#33813C"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_help_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:gravity="center"
+                android:text="Help"
+                android:textColor="#fff" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logOut"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/cards"
+            app:cardBackgroundColor="#33813C"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_logout_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:gravity="center"
+                android:text="LogOut"
+                android:textColor="#fff" />
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>

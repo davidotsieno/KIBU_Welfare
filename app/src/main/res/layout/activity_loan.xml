@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoanActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loan Limit(KES)"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#000"
+            android:enabled="false"
+            android:inputType="numberDecimal"
+            android:text="100-1,000"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+        <TextView
+            android:drawableLeft="@drawable/ic_money"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Loan Amount to Borrow(KES):"/>
+
+        <EditText
+            android:id="@+id/loanAmount"
+            android:layout_marginLeft="10dp"
+            android:textSize="12dp"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textStyle="bold"
+            android:backgroundTint="#000"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send To Mpesa Phone No:"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:drawableLeft="@drawable/ic_send_black_24dp"
+            android:drawablePadding="5dp"/>
+
+        <EditText
+            android:layout_width="165dp"
+            android:id="@+id/phoneNum"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:backgroundTint="#000"
+            android:inputType="phone"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+
+        <!--fnvkfb-->
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="5dp"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <TextView
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+                android:text="Amount to Repay(KES)"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="165dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="75dp"
+                android:textColor="#000"
+                android:layout_marginTop="20dp"
+                android:text="To be Paid By:"
+                android:textSize="12dp" />
+
+
+            <EditText
+                android:id="@+id/repayAmount"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#000"
+                android:editable="false"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/byWhen"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:backgroundTint="#000"
+                android:enabled="false"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </GridLayout>
+
+
+        <CheckBox
+            android:id="@+id/termsCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000"
+            android:layout_marginLeft="10dp"
+            android:text="I agree to the terms and conditions."/>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:enabled="true"
+            android:textColor="#fff"
+            android:saveEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/submitbtn"
+            android:text="Submit Request" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "793099947281",
+    "firebase_url": "https://kibu-welfare.firebaseio.com",
+    "project_id": "kibu-welfare",
+    "storage_bucket": "kibu-welfare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793099947281:android:cabcf1c799af109c6b10b0",
+        "android_client_info": {
+          "package_name": "com.kanyideveloper.kibuwelfare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793099947281-44bhv01lsjnkb0c7pnsl7ati7f5tkffu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_kUH_SSlsuu6ccY4Dxo9wPeflVY1xuwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793099947281-44bhv01lsjnkb0c7pnsl7ati7f5tkffu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -19,6 +19,7 @@ import com.androidstudy.daraja.model.LNMExpress;
 import com.androidstudy.daraja.model.LNMResult;
 import com.androidstudy.daraja.network.ApiClient;
 import com.androidstudy.daraja.util.TransactionType;
+import com.google.firebase.auth.FirebaseAuth;
 import com.squareup.okhttp.Response;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
@@ -31,7 +32,7 @@ public class AccountActivity extends AppCompatActivity {
 
     //Daraja :: Global Variable
     Daraja daraja;
-
+    FirebaseAuth mAuth;
     String phoneNumber;
     String amount;
 
@@ -46,6 +47,10 @@ public class AccountActivity extends AppCompatActivity {
         editTextPhoneNumber = findViewById(R.id.editTextPhoneNumber);
         editTextAmount = findViewById(R.id.editTextAmount);
         sendButton = findViewById(R.id.sendButton);
+
+        mAuth  = FirebaseAuth.getInstance();
+
+        String userId = mAuth.getCurrentUser().getUid();
 
         //Init Daraja
         //To get the access token
@@ -93,7 +98,7 @@ public class AccountActivity extends AppCompatActivity {
                         "591684",
                         "174379",
                         phoneNumber,
-                        "https://kibu-welfare.firebaseio.com/.json?",
+                        "https://kibu-welfare.firebaseio.com/Students/Message.json",
                         "591684",
                         "Payment for goods and services of company A"
                 );

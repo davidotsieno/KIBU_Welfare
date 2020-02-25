@@ -105,6 +105,7 @@ public class SignUpActivity extends AppCompatActivity {
                                 student.put("Registration_No",regNo);
                                 student.put("Phone_No",phone);
                                 student.put("Email",email);
+                                student.put("Message",null);
 
                                 documentReference.set(student)
                                         .addOnSuccessListener(new OnSuccessListener<Void>() {

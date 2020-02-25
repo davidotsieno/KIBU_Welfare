@@ -65,13 +65,11 @@ public class LoanActivity extends AppCompatActivity {
                     mny = Double.parseDouble(money);
                     repay.setText(""+((mny*(20.0/100))+mny));
                     dayToRepay.setText(dateInString);
-
                 }
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-
             }
         });
     }
